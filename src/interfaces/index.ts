@@ -9,7 +9,7 @@ export interface WishlistItem {
 export interface Branch {
   id: string;
   branch: string;
-  ticketUrl: string;
+  ticket_url: string;
   createdAt: Date;
 }
 

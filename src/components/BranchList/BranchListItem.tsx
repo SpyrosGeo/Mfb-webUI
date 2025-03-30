@@ -6,12 +6,13 @@ interface BranchItemProps {
 }
 const BranchItemComponent: React.FC<BranchItemProps> = ({ item }) => {
   const [error, setError] = useState<string | null>("");
+  console.log("item", item);
 
   return (
     <div className="wishlist-item__container">
       <h3>{item.branch}</h3>
       <p>
-        <a href={item.ticketUrl} target="_blank">
+        <a href={item.ticket_url} target="_blank">
           View ticket
         </a>
       </p>
